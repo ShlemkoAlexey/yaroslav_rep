@@ -1,0 +1,7 @@
+@font-face {
+  font-family: MuseoSansCyrl; /* Гарнитура шрифта */
+  src: url(../fonts/Museo-Sans-Cyr/MuseoSansCyrl.otf); /* Путь к файлу со шрифтом */
+}
+body, h1{
+  font-family: MuseoSansCyrl, sans-serif;
+}
