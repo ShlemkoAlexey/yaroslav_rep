@@ -1,0 +1,75 @@
+.first-block .row{
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+
+.first-block .row .col-xs-6 h1{
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 72px;
+/*  font-weight: 900;*/
+  text-align: center;
+  color: black;
+  line-height: 1.5;
+}
+
+.first-block .row .col-xs-6 p{
+  font-family: MuseoSansCyrl_300, sans-serif;
+  font-size: 16pt;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(75, 75, 75);
+  line-height: 1.5;
+}
+.second-block{
+  position: relative;
+}
+.second-block-slider{
+  width: 100%;
+  margin-bottom: 0 !important;
+}
+
+.second-block .slick-dots{
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+.slick-dots li button:before{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  opacity: .5;
+}
+.slick-dots li.slick-active button:before{
+  color: rgb(39, 182, 255);
+}
+
+
+.prev-button, .next-button{
+  background: white;
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgb(204, 211, 217);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  opacity: .4;
+  cursor: pointer;
+}
+.prev-button:hover, .next-button:hover{
+  opacity: .7;
+}
+.next-button img{
+  margin-left: 25px;
+  margin-top: 19px;
+}
+.prev-button img{
+  margin-top: 19px;
+  margin-left: 18px;
+}
+
+.prev-button{
+  left: 0;
+}
+.next-button{
+  right: 0;
+}

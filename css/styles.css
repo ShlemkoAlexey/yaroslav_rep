@@ -1,7 +1,58 @@
+footer{
+  color: white;
+  height: 200px;
+  background: gray;
+  font-size: 60px !important;
+  text-align: center;
+  vertical-align: middle;
+}
+
 @font-face {
   font-family: MuseoSansCyrl; /* Гарнитура шрифта */
   src: url(../fonts/Museo-Sans-Cyr/MuseoSansCyrl.otf); /* Путь к файлу со шрифтом */
+  src: url(../fonts/Museo-Sans-Cyr/MuseoSansCyrl_0.otf); /* Путь к файлу со шрифтом */
+  src: url(../fonts/Museo-Sans-Cyr/MuseoSansCyrl_1.otf); /* Путь к файлу со шрифтом */
+  src: url(../fonts/Museo-Sans-Cyr/MuseoSansCyrl_2.otf); /* Путь к файлу со шрифтом */
+  src: url(../fonts/Museo-Sans-Cyr/MuseoSansCyrl_3.otf); /* Путь к файлу со шрифтом */
 }
 body, h1{
   font-family: MuseoSansCyrl, sans-serif;
+}
+
+
+.header-logo .col-xs-3 img{
+  margin-top: 35px;
+  margin-left: 100px;
+
+}
+
+.lang-switch{
+
+}
+.lang-en, .lang-ru{
+  display: inline-block;
+  margin-top: 35px;
+  font-family: MuseoSansCyrl_100;
+  background: rgb(144, 154, 163);
+  padding: 6px;
+  color: rgb(189, 197, 205);
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.lang-en{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  left: 2px;
+}
+.lang-ru{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  right: 2px;
+}
+.lang-active{
+  font-weight: bold;
+  color: white;
+  background: rgb(94, 106, 117);
 }
