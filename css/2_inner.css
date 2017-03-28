@@ -1,21 +1,27 @@
+.first-block{
+  margin-top: 140px;
+  margin-top: 6vw;
+  width: 50%;
+  margin-left: 25%;
+}
+
 .first-block .row{
   margin-top: 70px;
   margin-bottom: 100px;
 }
 
 
-.first-block .row .col-xs-6 h1{
+.first-block div h1{
   font-family: MuseoSansCyrl, sans-serif;
-  font-size: 72px;
-/*  font-weight: 900;*/
+  font-size: 4vw;
   text-align: center;
   color: black;
   line-height: 1.5;
 }
 
-.first-block .row .col-xs-6 p{
+.first-block div p{
   font-family: MuseoSansCyrl_300, sans-serif;
-  font-size: 16pt;
+  font-size: 1.15vw;
   font-weight: 100;
   text-align: center;
   color: rgb(75, 75, 75);
@@ -23,6 +29,7 @@
 }
 .second-block{
   position: relative;
+  margin-top: 150px;
 }
 .second-block-slider{
   width: 100%;

@@ -1,12 +1,3 @@
-footer{
-  color: white;
-  height: 200px;
-  background: gray;
-  font-size: 60px !important;
-  text-align: center;
-  vertical-align: middle;
-}
-
 @font-face {
   font-family: MuseoSansCyrl; /* Гарнитура шрифта */
   src: url(../fonts/Museo-Sans-Cyr/MuseoSansCyrl.otf); /* Путь к файлу со шрифтом */
@@ -17,19 +8,55 @@ footer{
 }
 body, h1{
   font-family: MuseoSansCyrl, sans-serif;
-}
-
-
-.header-logo .col-xs-3 img{
-  margin-top: 35px;
-  margin-left: 100px;
 
 }
 
-.lang-switch{
+.header-top{
+
+  width: 100%;
+  vertical-align: middle;
+}
+
+.header-logo{
+  display: inline-block;
+  margin-left: 9%;
+  height: 3vw;
+}
+
+.company-and-contacts{
+  display: inline-block;
+  /*border: 1px solid black;*/
+  color: #3a99d9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 3%;
+  font-family: MuseoSansCyrl_600, sans-serif;
+  font-size: 1vw;
+}
+
+.partners{
+  display: inline-block;
+  font-family: MuseoSansCyrl_600, sans-serif;
+  font-size: 1vw;
+  padding-left: 1%;
+}
+
+.phone{
+  display: inline-block;
+  font-family: MuseoSansCyrl_600, sans-serif;
+  font-size: 1vw;
+  padding-left: 3%;
+}
+.email{
+  display: inline-block;
+  font-family: MuseoSansCyrl_600, sans-serif;
+  font-size: 1vw;
+  padding-left: 3%;
+}
+/*.lang-switch{
 
 }
-.lang-en, .lang-ru{
+/*.lang-en, .lang-ru{
   display: inline-block;
   margin-top: 35px;
   font-family: MuseoSansCyrl_100;
@@ -38,7 +65,7 @@ body, h1{
   color: rgb(189, 197, 205);
   position: relative;
   cursor: pointer;
-  
+
 }
 
 .lang-en{
@@ -55,4 +82,91 @@ body, h1{
   font-weight: bold;
   color: white;
   background: rgb(94, 106, 117);
+}*/*/
+
+/*NAV BAR*/
+.header-nav{
+  width: 100%;
+}
+
+.nav-bar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 10%;
+  background-color: #0598ff;
+}
+
+.nav-bar li{
+    display: inline-block;
+    /*background: lightblue;*/
+    width: 11%;
+    vertical-align: top;
+    margin: 5px 0;
+    vertical-align: middle;
+    margin-left: 2%;
+}
+
+.nav-bar li a{
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: white;
+  font-family: MuseoSansCyrl_100, sans-serif;
+  font-size: 1vw;
+}
+.nav-bar li a:hover{
+  text-decoration: none;
+}
+
+footer{
+  position: relative;
+  top: -1px;
+  color: white;
+  background: #161616;
+  padding-left: 16%;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  vertical-align: top;
+}
+
+.footer-left-part{
+  font-size: 1vw;
+  /*border: 1px solid yellow;*/
+  display: inline-block;
+  width: 100%;
+}
+
+.footer-col-1{
+  display: inline-block;
+  /*border: 1px solid white;*/
+  width: 15%;
+  vertical-align: top;
+}
+
+.footer-col-1 a{
+  display: block;
+  font-family: MuseoSansCyrl_100, sans-serif;
+  color: white;
+  height: 3.5vw;
+}
+
+.footer-col-1 a:nth-child(1){
+  font-size: .8vw;
+}
+
+.footer-col-1 a:nth-child(n+2){
+  font-size: 1.1vw;
+  margin-bottom: 2vw;
+}
+
+.footer-col-2{
+  display: inline-block;
+  margin-left: 15%;
+  font-family: MuseoSansCyrl_100, sans-serif;
+  font-size: 1.8vw;
+}
+.footer-col-2-link{
+  margin-top: 20px;
+  font-size: 1.2vw;
 }
