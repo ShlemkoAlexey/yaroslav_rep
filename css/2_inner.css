@@ -39,10 +39,10 @@
 .second-block .slick-dots{
   position: absolute;
   bottom: 0;
-  padding: 20px;
+  padding: 1vw;
 }
 .slick-dots li button:before{
-  font-size: 20px;
+  font-size: 1vw;
   color: rgb(255, 255, 255);
   opacity: .5;
 }
@@ -53,10 +53,10 @@
 
 .prev-button, .next-button{
   background: white;
-  width: 80px;
-  height: 80px;
+  width: 4vw;
+  height: 4vw;
   border: 1px solid rgb(204, 211, 217);
-  border-radius: 10px;
+  border-radius: .5vw;
   position: absolute;
   top: 50%;
   opacity: .4;
@@ -66,12 +66,14 @@
   opacity: .7;
 }
 .next-button img{
-  margin-left: 25px;
-  margin-top: 19px;
+  margin-left: 1.25vw;
+  margin-top: .8vw;
+  width: 2vw;
 }
 .prev-button img{
-  margin-top: 19px;
-  margin-left: 18px;
+  margin-top: .9vw;
+  margin-left: .8vw;
+  width: 2vw;
 }
 
 .prev-button{

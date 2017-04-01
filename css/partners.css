@@ -1,0 +1,34 @@
+.first-block{
+  width: 100%;
+  height: 40vw;
+  background-image: url(../src/partners.png);
+  background-size: cover;
+  text-align: center;
+  padding-top: 16.5vw;
+}
+
+.first-block h1{
+  color: white;
+  font-size: 4vw;
+}
+
+
+.second-block{
+  margin: 8vw 0;
+}
+
+.second-block .partners-block{
+  display: inline-block;
+  text-align: center;
+  width: 24%;
+  margin-bottom: 2vw;
+
+}
+.second-block .partners-block img{
+  width: 15vw;
+    cursor: pointer;
+}
+.second-block .partners-block p{
+  margin-top: 1vw;
+    cursor: pointer;
+}
