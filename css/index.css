@@ -179,3 +179,62 @@
   width: 100%;
   height: 40vw;
 }
+
+
+
+#legend{
+  background: white;
+  border: 5px solid #1689fc;
+  padding: 1vw;
+  margin-right: 2vw;
+}
+
+#legend .legend-central{
+
+}
+
+  #legend .legend-central h4{
+    font-family: MuseoSansCyrl_400, sans-serif;
+    font-weight: bold;
+    font-size: 1.2vw;
+    text-align: center;
+  }
+  #legend .legend-central p{
+    font-size: .8vw;
+  }
+
+  #legend .legend-more{
+    text-align: center;
+    margin: 1vw 0;
+  }
+  #legend .legend-more p{
+    color: #0598ff;
+    display: inline-block;
+    border: 2px solid #0598ff;
+    border-radius: .5vw;
+    font-size: 1vw;
+    padding: .5vw 1vw ;
+    cursor: pointer;
+    transition: .3s;
+  }
+  #legend .legend-more p:hover{
+    color: white;
+    background: #0598ff;
+    transition: .3s;
+  }
+
+  #legend .legend-filials{
+    text-align: center;
+  }
+  #legend .legend-filials h1{
+    font-size: 1vw;
+    font-family: MuseoSansCyrl_400, sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+  }
+  #legend .legend-filials h2{
+    font-size: 1vw;
+  }
+  #legend .legend-filials p{
+    font-size: .8vw;
+  }
