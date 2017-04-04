@@ -1,0 +1,102 @@
+.first-block, .third-block{
+  margin-top: 140px;
+  margin-top: 6vw;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.first-block .row,
+.third-block .row{
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+
+.first-block div h1,
+.third-block div h1{
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 4vw;
+  text-align: center;
+  color: black;
+  line-height: 1.5;
+}
+
+.first-block div p,
+.third-block div p{
+  font-family: MuseoSansCyrl_300, sans-serif;
+  font-size: 1.15vw;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(75, 75, 75);
+  line-height: 1.5;
+  margin-bottom: 3vw;
+}
+
+
+.second-block{
+  width: 75%;
+  margin-left: 12.5%;
+  text-align: center;
+}
+
+.second-block div{
+  display: inline-block;
+  width: 22vw;
+  height: 22vw;
+  position: relative;
+  margin-right: -.2vw;
+
+}
+
+.second-block div p{
+  margin-top: 80%;
+  font-family: MuseoSansCyrl_300, sans-serif;
+  font-size: 1vw;
+}
+
+.second-block div:nth-child(1){
+  background-image: url(../src/7_inner/1.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #333757;
+}
+.second-block div:nth-child(2){
+  background-image: url(../src/7_inner/2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #afdeed;
+}
+.second-block div:nth-child(3){
+  background-image: url(../src/7_inner/3.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #afdeed;
+}
+.second-block div:nth-child(4){
+  background-image: url(../src/7_inner/4.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #333757;
+}
+.second-block div:nth-child(5){
+  background-image: url(../src/7_inner/5.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #97928e;
+}
+.second-block div:nth-child(6){
+  background-color: #eaeaea;
+}
+.fourth-block{
+  text-align: center;
+
+  margin: 5vw 0;
+}
+.fourth-block img{
+  display: inline-block;
+  width: 50vw;
+}
