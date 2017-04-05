@@ -1,0 +1,104 @@
+.first-block{
+  margin-top: 140px;
+  margin-top: 6vw;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.first-block .row{
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+
+.first-block div h1{
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 4vw;
+  text-align: center;
+  color: black;
+  line-height: 1.5;
+}
+
+.first-block div p{
+  font-family: MuseoSansCyrl_300, sans-serif;
+  font-size: 1.15vw;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(75, 75, 75);
+  line-height: 1.5;
+  margin-bottom: 3vw;
+}
+
+.second-block{
+  width: 75%;
+  margin-left: 15%;
+  text-align: left;
+  margin-bottom: 6vw;
+}
+
+.second-block div{
+  display: inline-block;
+  width: 22vw;
+  height: 22vw;
+  background: pink;
+  vertical-align: top;
+  text-align: center;
+  background-size: contain;
+}
+.second-block div:nth-child(1){
+  background-image: url(../src/8_inner/1.png);
+}
+.second-block div:nth-child(2){
+  background-image: url(../src/8_inner/2.png);
+}
+.second-block div:nth-child(3){
+  background-image: url(../src/8_inner/3.png);
+}
+.second-block div h5{
+  color: white;
+  text-align: center;
+  margin-top: 30%;
+  font-size: 1.5vw;
+  height: 6vw;
+}
+
+.second-block div p{
+  font-family: MuseoSansCyrl_300, sans-serif;
+  font-size: 1vw;
+  margin: 0;
+  display: inline-block;
+  border: 1px solid #c1eaff;
+  background: white;
+  color: #27b6ff;
+  padding: .25vw .5vw;
+  border-radius: 1vw;
+  transition: .3s;
+}
+.second-block div p:hover{
+  color: white;
+  background: #27b6ff;
+  border: 1px solid #27b6ff;
+  cursor: pointer;
+  transition: .3s;
+}
+
+
+
+
+.popup{
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  position: fixed;
+  top: 0;
+  opacity: .5;
+}
+.popup div{
+  width: 50%;
+  background: white;
+  opacity: 1;
+}
+
+.popup div h5{}
+
+.popup div p{}
