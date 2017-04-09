@@ -1,0 +1,130 @@
+.first-block{
+  margin-top: 140px;
+  margin-top: 6vw;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.first-block .row{
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+
+.first-block div h1{
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 4vw;
+  text-align: center;
+  color: black;
+  line-height: 1.5;
+}
+
+.first-block div p{
+  font-family: MuseoSansCyrl_300, sans-serif;
+  font-size: 1.15vw;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(75, 75, 75);
+  line-height: 1.5;
+  margin-bottom: 3vw;
+}
+
+.second-block{
+  position: relative;
+  margin-top: 150px;
+}
+.second-block-slider{
+  width: 100%;
+  margin-bottom: 0 !important;
+}
+
+.second-block .slick-dots{
+  position: absolute;
+  bottom: 0;
+  padding: 1vw;
+}
+.slick-dots li button:before{
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
+  opacity: .5;
+}
+.slick-dots li.slick-active button:before{
+  color: rgb(39, 182, 255);
+}
+
+
+.prev-button, .next-button{
+  background: white;
+  width: 4vw;
+  height: 4vw;
+  border: 1px solid rgb(204, 211, 217);
+  border-radius: .5vw;
+  position: absolute;
+  top: 50%;
+  opacity: .4;
+  cursor: pointer;
+}
+.prev-button:hover, .next-button:hover{
+  opacity: .7;
+}
+.next-button img{
+  margin-left: 1.25vw;
+  margin-top: .8vw;
+  width: 2vw;
+}
+.prev-button img{
+  margin-top: .9vw;
+  margin-left: .8vw;
+  width: 2vw;
+}
+
+.prev-button{
+  left: 0;
+}
+.next-button{
+  right: 0;
+}
+
+
+.third-block{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 4vw ;
+  margin-bottom: 4vw;
+}
+.third-block .third-block-part{
+
+}
+.third-block .third-block-part div{
+  display: inline-block;
+  vertical-align: top;
+  margin: 3vw 0;
+}
+
+.third-block .third-block-part div:nth-child(1){
+  width: 25%;
+}
+
+.third-block .third-block-part div:nth-child(1) img{
+  width: 100%;
+}
+
+.third-block .third-block-part div:nth-child(2){
+    width: 60%;
+    margin-left: 14%;
+    padding-right: 14%;
+}
+
+.third-block .third-block-part div:nth-child(2) h1{
+  font-size: 2.5vw;
+  margin-bottom: 3vw;
+}
+
+.third-block .third-block-part div:nth-child(2) p{
+  font-family: MuseoSansCyrl_400, sans-serif;
+  font-size: 1vw;
+  font-weight: normal;
+}
+.third-block .third-block-part div:nth-child(2) p:last-child{
+  margin-top: 2vw;
+}

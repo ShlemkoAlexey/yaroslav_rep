@@ -92,6 +92,7 @@
   position: fixed;
   top: 0;
   opacity: .5;
+  display: none;
 }
 .popup div{
   width: 50%;
