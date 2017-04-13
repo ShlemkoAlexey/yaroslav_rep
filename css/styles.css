@@ -12,7 +12,6 @@ body, h1{
 }
 
 .header-top{
-
   width: 100%;
   vertical-align: middle;
 }
@@ -34,6 +33,43 @@ body, h1{
   font-family: MuseoSansCyrl_600, sans-serif;
   font-size: 1vw;
   cursor: pointer;
+}
+.company-and-contacts .company-and-contacts-drop{
+  position: absolute;
+  border: 5px solid #198cff;
+  background: white;
+  z-index: 1;
+  padding: 1vw;
+  color: black;
+  display: none;
+}
+
+.company-and-contacts .company-and-contacts-drop h5{
+  font-size: 1.25vw;
+  font-weight: bold;
+}
+
+.company-and-contacts .company-and-contacts-drop p{
+    font-size: .9vw;
+}
+
+.company-and-contacts .company-and-contacts-drop button{
+  font-family: MuseoSansCyrl_300, sans-serif;
+  font-weight: 100;
+  font-size: 1vw;
+  background: white;
+  color: #27b6ff;
+  border: 1px solid #27b6ff;
+  margin-top: 1vw;
+  border-radius: .25vw;
+  padding: .25vw .5vw;
+  transition: .3s;
+}
+
+.company-and-contacts .company-and-contacts-drop button:hover{
+  color: white;
+  background: #27b6ff;
+  transition: .3s;
 }
 
 .partners{
@@ -75,9 +111,9 @@ body, h1{
   border-bottom-right-radius: .25vw;
 }
 .ru-en span{
-    background: #909aa3;
-    display: inline-block;
-    padding: .45vw .25vw;
+  background: #909aa3;
+  display: inline-block;
+  padding: .45vw .25vw;
 }
 
 .ru-en span.active{
@@ -85,10 +121,10 @@ body, h1{
   color: white;
 }
 header a img{
-    width: 2vw;
-    margin-top: -.2vw;
-    margin-left: .3vw;
-  }
+  width: 2vw;
+  margin-top: -.2vw;
+  margin-left: .3vw;
+}
 
 }
 
@@ -106,14 +142,13 @@ header a img{
 }
 
 .nav-bar li{
-    display: inline-block;
-    /*background: lightblue;*/
-    width: 11%;
-    vertical-align: top;
-    margin: 5px 0;
-    vertical-align: middle;
-    margin-left: 2%;
-
+  display: inline-block;
+  /*background: lightblue;*/
+  width: 11%;
+  vertical-align: top;
+  margin: 5px 0;
+  vertical-align: middle;
+  margin-left: 2%;
 
 }
 
@@ -127,7 +162,6 @@ header a img{
 }
 .nav-bar li a:hover{
   text-decoration: none;
-
 }
 
 footer{

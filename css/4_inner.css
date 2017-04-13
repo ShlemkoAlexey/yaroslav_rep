@@ -230,3 +230,54 @@
   font-size: .8vw;
   font-family: MuseoSansCyrl_300, sans-serif;
 }
+
+
+
+
+
+
+
+
+.popup-shadow{
+  width: 100vw;
+  height: 100vh;
+  background: lightgray;
+  position: fixed;
+  top: 0;
+  opacity: .7;
+  display: none;
+}
+.popup{
+  width: 50vw;
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  background: white;
+  opacity: 1;
+  text-align: left;
+  font-family: MuseoSansCyrl_300, sans-serif;
+  display: none;
+  padding: 2%;
+}
+
+.popup .close{
+  position: absolute;
+  right: 1vw;
+  top: 1vw;
+  opacity: .3;
+  transition: .3s;
+}
+.popup .close:hover{
+  opacity: 1;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.popup h1{
+  font-size: 3.5vh;
+  font-weight: bold;
+}
+
+.popup .popup-img{
+  width: 100%;
+}

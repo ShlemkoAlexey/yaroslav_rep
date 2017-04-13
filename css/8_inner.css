@@ -85,21 +85,61 @@
 
 
 
-.popup{
+.popup-shadow{
   width: 100vw;
   height: 100vh;
-  background: white;
+  background: lightgray;
   position: fixed;
   top: 0;
-  opacity: .5;
+  opacity: .7;
   display: none;
 }
-.popup div{
-  width: 50%;
+
+.popup{
+  width: 50vw;
+  position: fixed;
+  left: 25%;
+  top: 25%;
   background: white;
   opacity: 1;
+  text-align: center;
+  font-family: MuseoSansCyrl_300, sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  display: none;
+}
+@media only screen and (max-width: 800px){
+  .popup{
+    top: 10%;
+  }
+}
+.popup .close{
+  position: absolute;
+  right: 1vw;
+  top: 1vw;
+  opacity: .3;
+  transition: .3s;
+}
+.popup .close:hover{
+  opacity: 1;
+  cursor: pointer;
+  transition: .3s;
 }
 
-.popup div h5{}
+.popup h4{
+  font-size: 3vh;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
 
-.popup div p{}
+.popup h5{
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+
+.popup p{
+  font-size: 1.75vh;
+  margin-bottom: 2vh;
+}
