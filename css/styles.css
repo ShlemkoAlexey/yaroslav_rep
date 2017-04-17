@@ -42,8 +42,16 @@ body, h1{
   padding: 1vw;
   color: black;
   display: none;
+  opacity: .75;
 }
-
+.company-and-contacts b{
+  display: inline-block;
+  transition: .3s;
+}
+.rotate180{
+  transform: rotate(180deg);
+  transition: .3s;
+}
 .company-and-contacts .company-and-contacts-drop h5{
   font-size: 1.25vw;
   font-weight: bold;
@@ -169,7 +177,7 @@ footer{
   top: -1px;
   color: white;
   background: #161616;
-  padding-left: 16%;
+  padding-left: 22%;
   padding-top: 75px;
   padding-bottom: 50px;
   vertical-align: top;
@@ -209,7 +217,7 @@ footer{
 
 .footer-col-2{
   display: inline-block;
-  margin-left: 15%;
+  margin-left: 5%;
   font-family: MuseoSansCyrl_100, sans-serif;
   font-size: 1.8vw;
 }

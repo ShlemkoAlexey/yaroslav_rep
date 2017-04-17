@@ -128,3 +128,52 @@
 .third-block .third-block-part div:nth-child(2) p:last-child{
   margin-top: 2vw;
 }
+
+.fourth-block{
+  background-color: #eff4f7;
+  text-align: center;
+}
+
+.fourth-block p{
+  font-size: 2vw;
+  padding: 5vw 0;
+}
+
+.fourth-block form{
+  position: relative;
+  margin-left: 25vw;
+  width: 50vw;
+  height: 35vw;
+  background-image: url(../src/6_inner/letter.png);
+  background-size: 50vw;
+  background-repeat: no-repeat;
+}
+.fourth-block form input{
+  display: block;
+  position: absolute;
+  right: 6vw;
+  width: 12vw;
+  background: none;
+  font-family: MuseoSansCyrl_300, sans-serif;
+  border: none;
+  outline:none;
+  text-align: center;
+  font-size: 1vw;
+}
+.fourth-block form input:nth-child(1){
+  top: 16vw;
+}
+.fourth-block form input:nth-child(2){
+  top: 20vw;
+}
+.fourth-block form button{
+  display: block;
+  background-color: #2aa0ff;
+  border: none;
+  font-family: MuseoSansCyrl_300, sans-serif;
+  padding: 1vw 4vw;
+  font-size: 1vw;
+  position: absolute;
+  top: 24vw;
+  right: 11.5vw;
+}
