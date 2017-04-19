@@ -37,7 +37,9 @@
   width: 100%;
   margin-bottom: 0 !important;
 }
-
+.second-block-slider div img{
+  width: 100%;
+}
 .second-block .slick-dots{
   position: absolute;
   bottom: 0;
@@ -239,6 +241,7 @@
   padding-left: 25%;
   padding-right: 25%;
   background-color: #eff4f7;
+  display: none;
 }
 
 .seventh-block div{
@@ -262,6 +265,7 @@
   height: 60vh;
   background-color: #eff4f7;
   position: relative;
+  display: none;
 }
 
 .eight-block .calc-field-name{
@@ -339,9 +343,9 @@
   display: none;
 }
 .popup{
-  width: 50vw;
+  width: 70vw;
   position: fixed;
-  left: 25%;
+  left: 15%;
   top: 25%;
   background: white;
   opacity: 1;
@@ -357,6 +361,7 @@
   top: 1vw;
   opacity: .3;
   transition: .3s;
+  width: 3vw;
 }
 .popup .close:hover{
   opacity: 1;

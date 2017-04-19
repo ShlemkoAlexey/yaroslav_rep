@@ -14,21 +14,73 @@
 
 
 .second-block{
+  margin-top: 140px;
+  margin-top: 6vw;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.second-block .row{
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+
+.second-block div h1{
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 4vw;
+  text-align: center;
+  color: black;
+  line-height: 1.5;
+}
+
+.second-block div p{
+  font-family: MuseoSansCyrl_300, sans-serif;
+  font-size: 1.15vw;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(75, 75, 75);
+  line-height: 1.5;
+  margin-bottom: 3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.third-block{
   margin: 8vw 0;
 }
 
-.second-block .partners-block{
+.third-block .partners-block{
   display: inline-block;
   text-align: center;
   width: 24%;
   margin-bottom: 2vw;
   color: black;
 }
-.second-block .partners-block img{
+.third-block .partners-block img{
   width: 15vw;
     cursor: pointer;
 }
-.second-block .partners-block p{
+.third-block .partners-block p{
   margin-top: 1vw;
     cursor: pointer;
 }

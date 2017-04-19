@@ -18,7 +18,8 @@
   font-size: 4vw;
   text-align: center;
   color: black;
-  line-height: 1.5;
+  line-height: 1;
+  margin-bottom: 2vw;
 }
 
 .first-block div p,
@@ -40,7 +41,9 @@
   width: 100%;
   margin-bottom: 0 !important;
 }
-
+.second-block-slider div img{
+  width: 100%;
+}
 .second-block .slick-dots{
   position: absolute;
   bottom: 0;

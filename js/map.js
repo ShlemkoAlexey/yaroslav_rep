@@ -37,14 +37,14 @@ var map;
 
     /*marker2*/
     var marker2 = new google.maps.Marker({
-      position: {lat: 47.842341, lng: 35.117534},
+      position: {lat: 47.838933, lng: 35.139531},
       map: map,
       title: 'Запорожье',
       icon: markerPath
     });
 
     var contentString2 = '<div>'+
-    '<p>г. Запорожье</p> <p>Адрес</p> <p>(067) 950-33-14</p>'+
+    '<p>г. Запорожье</p> <p>ПОТОКИ-ЮГ</p> <p>(067) 950-33-14</p>'+
     '</div>';
 
     var infowindow2 = new google.maps.InfoWindow({
@@ -59,14 +59,14 @@ var map;
 
     /*marker3*/
     var marker3 = new google.maps.Marker({
-      position: {lat: 50.430804, lng: 30.487085},
+      position: {lat: 50.450101, lng: 30.524153},
       map: map,
       title: 'Киев',
       icon: markerPath
     });
 
     var contentString3 = '<div>'+
-    '<p>г. Киев</p> <p>Адрес</p> <p>(067) 544-38-36</p>'+
+    '<p>г. Киев</p> <p>ПОТОКИ-СЕВЕР</p> <p>(067) 544-38-36</p>'+
     '</div>';
 
     var infowindow3 = new google.maps.InfoWindow({
@@ -81,14 +81,14 @@ var map;
 
     /*marker4*/
     var marker4 = new google.maps.Marker({
-      position: {lat: 49.447965, lng: 32.029964},
+      position: {lat: 49.444457, lng: 32.059827},
       map: map,
       title: 'Черкассы',
       icon: markerPath
     });
 
     var contentString4 = '<div>'+
-    '<p>г. Черкассы</p> <p>Адрес</p> <p>(098) 182-30-97</p>'+
+    '<p>г. Черкассы</p> <p>ПОТОКИ-СЕВЕР</p> <p>(098) 182-30-97</p>'+
     '</div>';
 
     var infowindow4 = new google.maps.InfoWindow({
@@ -103,16 +103,16 @@ var map;
 
     /*marker5*/
     var marker5 = new google.maps.Marker({
-      position: {lat: 49.265806, lng: 28.456450},
+      position: {lat: 49.232778, lng: 28.468658},
       map: map,
-      title: 'Черкассы',
+      title: 'Винница',
       icon: markerPath
     });
 
 
 
     var contentString5 = '<div>'+
-    '<p>г. Винница</p> <p>Адрес</p> <p>(096) 552-21-50</p>'+
+    '<p>г. Винница</p> <p>ПОТОКИ-ЗАПАД</p> <p>(096) 552-21-50</p>'+
     '</div>';
 
     var infowindow5 = new google.maps.InfoWindow({
@@ -127,7 +127,7 @@ var map;
 
     /*marker6*/
     var marker6 = new google.maps.Marker({
-      position: {lat: 49.548873, lng: 25.597640},
+      position: {lat: 49.553692, lng: 25.594325},
       map: map,
       title: 'Тернополь',
       icon: markerPath
@@ -136,7 +136,7 @@ var map;
 
 
     var contentString6 = '<div>'+
-    '<p>г. Тернополь</p> <p>Адрес</p> <p>(097) 868-18-85</p>'+
+    '<p>г. Тернополь</p> <p>ПОТОКИ-ЗАПАД</p> <p>(097) 868-18-85</p>'+
     '</div>';
 
     var infowindow6 = new google.maps.InfoWindow({
@@ -151,16 +151,16 @@ var map;
 
     /*marker7*/
     var marker7 = new google.maps.Marker({
-      position: {lat: 49.990399, lng: 36.193883},
+      position: {lat: 49.993495, lng: 36.230056},
       map: map,
       title: 'Харьков',
       icon: markerPath
     });
 
-
+ 
 
     var contentString7 = '<div>'+
-    '<p>г. Харьков</p> <p>Адрес</p> <p>(098) 182 30 89</p>'+
+    '<p>г. Харьков</p> <p>ПОТОКИ-ВОСТОК</p> <p>(098) 182 30 89</p>'+
     '</div>';
 
     var infowindow7 = new google.maps.InfoWindow({

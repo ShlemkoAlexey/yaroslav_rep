@@ -5,7 +5,9 @@
   width: 100%;
   margin-bottom: 0 !important;
 }
-
+.first-block-slider div img{
+  width: 100%;
+}
 .first-block .slick-dots{
   position: absolute;
   bottom: 0;
@@ -213,7 +215,7 @@
 }
 
 #legend .legend-central{
-
+  
 }
 
   #legend .legend-central h4{
@@ -226,11 +228,11 @@
     font-size: .8vw;
   }
 
-  #legend .legend-more{
+  #legend .legend-more-button{
     text-align: center;
     margin: 1vw 0;
   }
-  #legend .legend-more p{
+  #legend .legend-more-button p{
     color: #0598ff;
     display: inline-block;
     border: 2px solid #0598ff;
@@ -240,7 +242,7 @@
     cursor: pointer;
     transition: .3s;
   }
-  #legend .legend-more p:hover{
+  #legend .legend-more-button p:hover{
     color: white;
     background: #0598ff;
     transition: .3s;
