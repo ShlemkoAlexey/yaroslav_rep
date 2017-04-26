@@ -142,3 +142,11 @@
   margin-top: 10vw;
   margin-bottom: 3vw;
 }
+
+.sixth-block .form-feedback{
+  color: green;
+  display: none;
+  font-weight: normal;
+  padding-bottom: 33vw;
+  margin-bottom: 0;
+}

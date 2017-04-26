@@ -13,25 +13,25 @@
 <body>
   <header>
     <div class="header-top">
-      <img src="src/logo.png" alt="logo" class="header-logo" onclick="location.href = 'index.html'">
+      <a href="index.html"><img src="src/logo.png" alt="logo" class="header-logo"></a>
       <div class="company-and-contacts">Компания и контакты <b>∨</b>
         <div class="company-and-contacts-drop">
           <h5>Центральный офис</h5>
           <p>г. Днепр пр. Богдана Хмельницкого 122а</p>
           <p>тел.: (056) 732-48-43 – многоканальный</p>
           <p>e-mail: <a href="mailto:office@potoki.ua">office@potoki.ua</a></p>
-          <button onclick="location.href = 'res/contacts.html'">Все контакты ></button>
+          <a class="all-cont" href="res/contacts.html">Все контакты ></a>
         </div>
       </div>
-      <div class="partners" onclick="location.href = 'res/partners.html'">Наши партнеры</div>
-      <div class="phone">(067)635-06-03</div>
-      <div class="phone">(056)732-48-43</div>
+      <a class="partners" href="res/partners.html">Наши партнеры</a>
+      <div class="phone">(067) 635-06-03</div>
+      <div class="phone">(056) 732-48-43</div>
       <div class="email">email: <a href="mailto:office@potoki.ua">office@potoki.ua</a></div>
       <div class="ru-en">
         <span>Eng</span><span class="active">Рус</span>
       </div>
-      <a href="#"><img src="src/fb.png" alt="facebook"></a>
-      <a href="#"><img src="src/ytb.png" alt="youtube"></a>
+      <a href="https://www.facebook.com/potokigroup/" target="_blank"><img src="src/fb.png" alt="facebook"></a>
+      <a href="https://www.youtube.com/channel/UC2u_ToExyrmBD2CuPUedvyw"  target="_blank"><img src="src/ytb.png" alt="youtube"></a>
     </div>
     <div class="header-nav">
       <ul class="nav-bar">
@@ -120,7 +120,7 @@
       <p>e-mail: <a href="mailto:office@potoki.ua">office@potoki.ua</a></p>
     </div>
     <div class="legend-more-button">
-      <p onclick="location.href = 'res/contacts.html'">Подробнее</p>
+      <p>Подробнее</p>
     </div>
     <div class="legend-filials">
       <h1>Региональные филиалы:</h1>
@@ -135,44 +135,71 @@
       <h2>ПОТОКИ-ВОСТОК</h2>
       <p>г. Харьков 	моб.: (098) 182 30 89</p>
     </div>
-    <div class="legend-more-block">
-
+    <div class="legend-more-block legend-hidden">
+      <div>
+        <h4>Департамент продаж</h4>
+        <a href="mailto:sales@potoki.ua">sales@potoki.ua</a>
+        <p>Тел.: (056) 732-48-43	Моб.: (099) 918-76-88</p>
+      </div>
+      <div>
+        <h4>Профили для гипсокартонных систем</h4>
+        <a href="mailto:spesialprofile@potoki.ua">spesialprofile@potoki.ua</a>
+        <p>Тел.: (056) 732-48-43	Моб.: (098) 182-30-86</p>
+      </div>
+      <div>
+        <h4>Специальные профили</h4>
+        <a href="mailto:spesialprofile@potoki.ua">spesialprofile@potoki.ua</a>
+        <p>Тел.: (056) 732-48-43	Моб.: (098) 182-30-91</p>
+      </div>
+      <div>
+        <h4>Строительство</h4>
+        <a href="mailto:construction@potoki.ua">construction@potoki.ua</a>
+        <p>Тел.: (056) 732-48-43	Моб.: (098) 182-30-91</p>
+      </div>
+      <div>
+        <h4>Бухгалтерия</h4>
+        <a href="mailto:fin@potoki.ua">fin@potoki.ua</a>
+        <p>Тел.: (056) 732-48-47</p>
+      </div>
+      <button>< Филиалы</button>
     </div>
   </div>
 
-  <footer>
-    <div class="footer-left-part">
-      <div class="footer-col-1">
-        <a href="res/8_inner.html">Услуги</a>
-        <a href="res/2_inner.html">Армирующий  профиль для ПВХ  окон</a>
-        <a href="res/5_inner.html">Штампованные детали</a>
+    <footer>
+      <div class="footer-left-part">
+        <div class="footer-col-1">
+          <a href="res/8_inner.html">Услуги</a>
+          <a href="res/2_inner.html">Армирующий  профиль для ПВХ  окон</a>
+          <a href="res/5_inner.html">Штампованные детали</a>
+        </div>
+        <div class="footer-col-1">
+          <a href="res/contacts.html">Компания и контакты</a>
+          <a href="res/3_inner.html">Профиль для монтажа гипсокартона</a>
+          <a href="res/6_inner.html">Рулонный и листовой прокат</a>
+        </div>
+        <div class="footer-col-1">
+          <a href="res/partners.html">Наши партнеры</a>
+          <a href="res/4_inner.html">Профильный лист</a>
+          <a href="res/7_inner.html">Каркасное строительство</a>
+        </div>
+        <div class="footer-col-2">
+          <p>(067) 635-06-03</p>
+          <p>(056) 732-48-43</p>
+          <p class="footer-col-2-link">email: <a href="mailto:office@potoki.ua">office@potoki.ua</a></p>
+          <a href="https://www.facebook.com/potokigroup/" target="_blank"><img src="src/fb.png" alt="facebook"></a>
+          <a href="https://www.youtube.com/channel/UC2u_ToExyrmBD2CuPUedvyw"  target="_blank"><img src="src/ytb.png" alt="youtube"></a>
+        </div>
       </div>
-      <div class="footer-col-1">
-        <a href="res/contacts.html">Компания и контакты</a>
-        <a href="res/3_inner.html">Профиль для монтажа гипсокартона</a>
-        <a href="res/6_inner.html">Рулонный и листовой прокат</a>
-      </div>
-      <div class="footer-col-1">
-        <a href="res/partners.html">Наши партнеры</a>
-        <a href="res/4_inner.html">Профильный лист</a>
-        <a href="res/7_inner.html">Каркасное строительство</a>
-      </div>
-      <div class="footer-col-2">
-        <p>(067) 635-06-03</p>
-        <p>(056) 732-48-43</p>
-        <p class="footer-col-2-link">email: <a href="mailto:office@potoki.ua">office@potoki.ua</a></p>
-        <a href="#"><img src="src/fb.png" alt="facebook"></a>
-        <a href="#"><img src="src/ytb.png" alt="youtube"></a>
-      </div>
-    </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-  <script  defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4-3FK0Bkf9d0Oep8UNypo__ueGDI-DSE&callback=initMap">
-  </script>
-  <script type="text/javascript" src="slick/slick.js"></script>
-  <script type="text/javascript" src="js/map.js"></script>
-  <script defer type="text/javascript" src="js/index.js"></script>
-  <script defer type="text/javascript" src="js/script.js"></script>
-</body>
-</html>
+    </footer>
+    <a href="#" class="scrollup">Наверх</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+
+    <script  defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4-3FK0Bkf9d0Oep8UNypo__ueGDI-DSE&callback=initMap">
+    </script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script defer type="text/javascript" src="js/index.js"></script>
+    <script defer type="text/javascript" src="js/script.js"></script>
+  </body>
+  </html>

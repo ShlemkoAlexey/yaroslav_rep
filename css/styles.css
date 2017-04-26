@@ -21,6 +21,7 @@ body, h1{
   margin-left: 9%;
   height: 3vw;
   cursor: pointer;
+  width: auto;
 }
 
 .company-and-contacts{
@@ -42,7 +43,7 @@ body, h1{
   padding: 1vw;
   color: black;
   display: none;
-  opacity: .75;
+  opacity: .85;
 }
 .company-and-contacts b{
   display: inline-block;
@@ -61,7 +62,7 @@ body, h1{
     font-size: .9vw;
 }
 
-.company-and-contacts .company-and-contacts-drop button{
+.company-and-contacts .company-and-contacts-drop .all-cont{
   font-family: MuseoSansCyrl_300, sans-serif;
   font-weight: 100;
   font-size: 1vw;
@@ -74,10 +75,11 @@ body, h1{
   transition: .3s;
 }
 
-.company-and-contacts .company-and-contacts-drop button:hover{
+.company-and-contacts .company-and-contacts-drop .all-cont:hover{
   color: white;
   background: #27b6ff;
   transition: .3s;
+  text-decoration: none;
 }
 
 .partners{
@@ -85,6 +87,7 @@ body, h1{
   font-family: MuseoSansCyrl_600, sans-serif;
   font-size: 1vw;
   padding-left: 1%;
+  color: black;
   cursor: pointer;
 }
 
@@ -230,3 +233,57 @@ footer{
   margin-right: .25vw;
   width: 2vw;
 }
+
+
+
+.ceo-article{
+  font-family: MuseoSansCyrl_100, sans-serif;
+  line-height: 1.5;
+  width: 70vw;
+  margin-left: 15vw;
+  color: rgb(170, 170, 170);
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+.ceo-article h2{font-size: .8vw;}
+.ceo-article p{font-size: .7vw;}
+
+
+.scrollup{
+width:40px;
+height:40px;
+opacity:0.3;
+position:fixed;
+bottom:50px;
+right:100px;
+display:none;
+text-indent:-9999px;
+background: url('../src/icon_top.png') no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ОТКЛЮЧИТЬ КАРКАСНОЕ СТРОИТЕЛЬСТВО*/
+body > header > div.header-nav > ul > li:nth-child(6),
+body > footer > div > div:nth-child(3) > a:nth-child(3){
+  display: none;
+}
+/*ОТКЛЮЧИТЬ КАРКАСНОЕ СТРОИТЕЛЬСТВО*/

@@ -241,12 +241,10 @@
   padding-left: 25%;
   padding-right: 25%;
   background-color: #eff4f7;
-  display: none;
 }
 
 .seventh-block div{
   margin-top: 70px;
-
 }
 
 
@@ -265,7 +263,6 @@
   height: 60vh;
   background-color: #eff4f7;
   position: relative;
-  display: none;
 }
 
 .eight-block .calc-field-name{
@@ -281,23 +278,31 @@
   font-weight: bold;
   margin-bottom: 0;
 }
-.eight-block .calc-field-name p:nth-child(2){
-  font-size: .8vw;
-  font-family: MuseoSansCyrl_300, sans-serif;
 
+.eight-block .calc-field-name p.blue:nth-child(1):first-letter{
+  font-size: 1.6vw;
+  margin-right: .25vw;
+  vertical-align: top;
+  color: #0598ff;
 }
-.field1{top: 10vh;  right: 65vw;}
-.field2{top: 21vh;  right: 65vw;}
-.field3{top: 30vh;  right: 65vw;}
-.field4{top: 41vh;  right: 65vw;}
+.eight-block .calc-field-name p:nth-child(2){
+  position: relative;
+  top: -1vw;
+  font-size: .7vw;
+  font-family: MuseoSansCyrl_300, sans-serif;
+}
+.field1{top: 10vh;  right: 72vw;}
+.field2{top: 10vh;  right: 55vw;}
+.field3{top: 10vh;  right: 37vw;}
+.field4{top: 10vh;  right: 20vw;}
 
-.field5{top: 10vh;  right: 30vw;}
-.field6{top: 21vh;  right: 30vw;}
-.field7{top: 30vh;  right: 30vw;}
-.field8{top: 41vh;  right: 30vw;}
+.field5{top: 30vh;  right: 50vw; width: 25vw!important;}
+.field6{top: 35vh;  right: 50vw; width: 25vw!important; }
+.field7{top: 40vh;  right: 50vw; width: 25vw!important; }
+.field8{top: 45vh;  right: 50vw; width: 25vw!important; }
 
 .eight-block .calc-result{
-  font-size: 1.3vw;
+  font-size: 1vw;
   font-family: MuseoSansCyrl_300, sans-serif;
   color: #59a7fe;
   position: absolute;
@@ -305,29 +310,28 @@
   text-align: left;
   font-weight: bold;
 }
-.result1{top: 4vh;   right: 18vw;}
-.result2{top: 9.25vh;  right: 18vw;}
-.result3{top: 20.25vh;  right: 18vw;}
-.result4{top: 29.25vh;  right: 18vw;}
-.result5{top: 40.25vh;  right: 18vw;}
+.result1{top: 30vh;  right: 38vw; display: none; }
+.result2{top: 30vh;  right: 38vw; }
+.result3{top: 35vh;  right: 38vw; }
+.result4{top: 40vh;  right: 38vw; }
+.result5{top: 45vh;  right: 38vw;}
 
 .eight-block .calc-input{
     position: absolute;
-    right: 48.5vw;
+    top: 17vh;
     background-color: #eff4f7;
     border: none;
-    border-bottom: 1px solid #d7d7d7;
-    width: 15vw;
+    border-bottom: 2px solid black;
     text-align: left;
     outline:none;
     font-size: 1.3vw;
     font-weight: normal;
 }
 
-.input1{top: 11vh;}
-.input2{top: 20vh;}
-.input3{top: 31vh;}
-.input4{top: 40.5vh;}
+.input1{right: 72vw; width: 8vw;}
+.input2{right: 55vw; width: 9.25vw; top: 16.25vh !important;}
+.input3{right: 37vw; width: 12vw; top: 16.25vh !important;}
+.input4{right: 20vw; width: 10vw;}
 
 
 

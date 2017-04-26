@@ -146,7 +146,7 @@
   margin-left: 25vw;
   width: 50vw;
   height: 35vw;
-  background-image: url(../src/6_inner/letter.png);
+  background-image: url(../src/6_inner/letter-new.png);
   background-size: 50vw;
   background-repeat: no-repeat;
 }
@@ -163,10 +163,13 @@
   font-size: 1vw;
 }
 .fourth-block form input:nth-child(1){
-  top: 16vw;
+  top: 12.75vw;
 }
 .fourth-block form input:nth-child(2){
-  top: 20vw;
+  top: 16.5vw;
+}
+.fourth-block form input:nth-child(3){
+  top: 20.5vw;
 }
 .fourth-block form button{
   display: block;
@@ -178,4 +181,10 @@
   position: absolute;
   top: 24vw;
   right: 11.5vw;
+}
+
+.fourth-block .form-feedback{
+  color: green;
+  display: none;
+  font-weight: normal;
 }

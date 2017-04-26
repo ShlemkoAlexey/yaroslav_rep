@@ -37,7 +37,7 @@ var map;
 
     /*marker2*/
     var marker2 = new google.maps.Marker({
-      position: {lat: 47.838933, lng: 35.139531},
+      position: {lat: 47.826390 , lng: 35.225480},
       map: map,
       title: 'Запорожье',
       icon: markerPath
@@ -59,7 +59,7 @@ var map;
 
     /*marker3*/
     var marker3 = new google.maps.Marker({
-      position: {lat: 50.450101, lng: 30.524153},
+      position: {lat: 50.429936, lng: 30.661651},
       map: map,
       title: 'Киев',
       icon: markerPath
@@ -103,7 +103,7 @@ var map;
 
     /*marker5*/
     var marker5 = new google.maps.Marker({
-      position: {lat: 49.232778, lng: 28.468658},
+      position: {lat: 49.264609 , lng: 28.493596},
       map: map,
       title: 'Винница',
       icon: markerPath
@@ -127,7 +127,7 @@ var map;
 
     /*marker6*/
     var marker6 = new google.maps.Marker({
-      position: {lat: 49.553692, lng: 25.594325},
+      position: {lat: 49.579151 , lng: 25.600158},
       map: map,
       title: 'Тернополь',
       icon: markerPath
@@ -157,7 +157,7 @@ var map;
       icon: markerPath
     });
 
- 
+
 
     var contentString7 = '<div>'+
     '<p>г. Харьков</p> <p>ПОТОКИ-ВОСТОК</p> <p>(098) 182 30 89</p>'+

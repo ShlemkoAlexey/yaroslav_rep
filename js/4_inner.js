@@ -59,3 +59,46 @@ $(".close, .popup-shadow").on("click", function(){
   $("#popup5").fadeOut();
   $("#popup6").fadeOut();
 });
+
+
+
+
+
+
+
+
+
+
+
+var arr = $(".input1").val().split(",");
+console.log(arr);
+// MR CALC
+$('.input2').keyup(function(event) {
+  if( $('.input2').val() < 0.5 || $('.input2').val() >12){
+    $('.input2').css("color", "red");
+  }else{
+    $('.input2').css("color", "black");
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MR CALC

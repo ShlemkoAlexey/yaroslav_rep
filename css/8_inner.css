@@ -101,9 +101,9 @@
 }
 
 .popup{
-  width: 50vw;
+  width: 40vw;
   position: fixed;
-  left: 25%;
+  left: 30%;
   top: 25%;
   background: white;
   opacity: 1;
@@ -111,12 +111,15 @@
   font-family: MuseoSansCyrl_300, sans-serif;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
   display: none;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-device-width: 800px){
   .popup{
-    top: 10%;
+    top: 25%;
+    width: 60vw;
+    left: 20%;
   }
 }
 .popup .close{

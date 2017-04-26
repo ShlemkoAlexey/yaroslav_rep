@@ -16,3 +16,12 @@ $(".prev-button").on("click", function () {
 $(".next-button").on("click", function () {
   $('.first-block-slider').slick("slickNext");
 });
+
+$(".legend-more-button").on("click", function (){
+  $(".legend-more-button, .legend-filials").fadeOut( function(){$(".legend-more-block").fadeIn();} );
+});
+
+
+$(".legend-more-block button").on("click", function (){
+  $(".legend-more-block").fadeOut( function(){$(".legend-more-button, .legend-filials").fadeIn();} );
+});
