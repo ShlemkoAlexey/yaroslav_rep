@@ -68,10 +68,10 @@ $(".close, .popup-shadow").on("click", function(){
 
 
 
-
-
+//get multiple value
 var arr = $(".input1").val().split(",");
-console.log(arr);
+
+
 // MR CALC
 $('.input2').keyup(function(event) {
   if( $('.input2').val() < 0.5 || $('.input2').val() >12){
@@ -81,14 +81,64 @@ $('.input2').keyup(function(event) {
   }
 });
 
+var mainObject = {
+  density : 7.85,
+  width : 1250,
+  maxWidth: 0,
+  montWidth: 0,
+  listLength: 0,
+  totalWidth: 0,
+  listThickness: 0,
+  listsNumber: 0,
+  listsArea: 0,
+  effectiveArea: 0,
+  totalWeight: 0
+};
+
+function getValsForCalc(){
+  var arr = $(".input1").val().split(",");
+  mainObject.maxWidth = +arr[0];
+  mainObject.montWidth = +arr[1];
+  mainObject.listLength = +$(".input2").val();
+  mainObject.totalWidth = +$(".input3").val();
+  mainObject.listThickness = +$(".input4").val();
+};
+function calculate(){
+  mainObject.listsNumber = Math.ceil(mainObject.totalWidth*1000 / mainObject.montWidth);
+  mainObject.listsArea = mainObject.listsNumber*mainObject.maxWidth/1000 ;
+  mainObject.effectiveArea = mainObject.listsNumber*mainObject.montWidth/1000 ;
+  if (mainObject.listLength >= 0.5 && mainObject.listLength <=12 ) {
+    mainObject.totalWeight = mainObject.width * mainObject.listThickness * mainObject.listLength * mainObject.density * mainObject.listsNumber/1000
+  }else(
+    mainObject.totalWeight = 0
+  )
+};
+function synchronize(){
+  $(".result2 p").html(mainObject.listsNumber);
+  $(".result3 p").html(mainObject.listsArea);
+  $(".result4 p").html(mainObject.effectiveArea);
+  $(".result5 p").html(mainObject.totalWeight);
+  console.log("sync");
+}
 
 
+// console.log(mainObject);
+// getValsForCalc();
+// console.log(mainObject);
+// calculate()
+// console.log(mainObject);
+// synchronize();
 
-
-
-
-
-
+$("body").on("click", function(){
+  getValsForCalc();
+  calculate();
+  synchronize();
+});
+$(document).keyup(function(){
+  getValsForCalc();
+  calculate();
+  synchronize();
+});
 
 
 

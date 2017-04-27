@@ -326,11 +326,12 @@
     outline:none;
     font-size: 1.3vw;
     font-weight: normal;
+    height: 2vw;
 }
 
 .input1{right: 72vw; width: 8vw;}
-.input2{right: 55vw; width: 9.25vw; top: 16.25vh !important;}
-.input3{right: 37vw; width: 12vw; top: 16.25vh !important;}
+.input2{right: 55vw; width: 9.25vw;}
+.input3{right: 37vw; width: 12vw;}
 .input4{right: 20vw; width: 10vw;}
 
 
