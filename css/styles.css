@@ -112,22 +112,25 @@ body, h1{
   padding-left: 3%;
   margin-right: 1vw;
 }
-.ru-en span:nth-child(1){
+.ru-en a:nth-child(1){
   border-top-left-radius: .25vw;
   border-bottom-left-radius: .25vw;
 }
 
-.ru-en span:nth-child(2){
+.ru-en a:nth-child(2){
   border-top-right-radius: .25vw;
   border-bottom-right-radius: .25vw;
 }
-.ru-en span{
+.ru-en a{
   background: #909aa3;
   display: inline-block;
   padding: .45vw .25vw;
+  color: lightgray;
 }
-
-.ru-en span.active{
+.ru-en a:hover{
+  text-decoration: none;
+}
+.ru-en a.active{
   background: #5e6a75;
   color: white;
 }
@@ -135,8 +138,6 @@ header a img{
   width: 2vw;
   margin-top: -.2vw;
   margin-left: .3vw;
-}
-
 }
 
 /*NAV BAR*/
@@ -154,13 +155,10 @@ header a img{
 
 .nav-bar li{
   display: inline-block;
-  /*background: lightblue;*/
   width: 11%;
-  vertical-align: top;
   margin: 5px 0;
   vertical-align: middle;
   margin-left: 2%;
-
 }
 
 .nav-bar li a{

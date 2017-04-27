@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  syncThickness();
   $('.second-block-slider').slick({
     accessibility: true,
     autoplay: true,
@@ -117,8 +118,7 @@ function synchronize(){
   $(".result2 p").html(mainObject.listsNumber);
   $(".result3 p").html(mainObject.listsArea);
   $(".result4 p").html(mainObject.effectiveArea);
-  $(".result5 p").html(mainObject.totalWeight);
-  console.log("sync");
+  $(".result5 p").html(mainObject.totalWeight.toFixed(2));
 }
 
 
@@ -142,13 +142,28 @@ $(document).keyup(function(){
 
 
 
-
-
-
-
-
-
-
-
-
 // MR CALC
+
+function syncThickness(){
+  if ($(".input1").val() == "1190,1160") {
+    var arr = [0.33, 0.4, 0.45, 0.5, 0.65, 0.7];
+  }else if ($(".input1").val() == "1150,1100") {
+    var arr = [0.33, 0.4, 0.45, 0.5, 0.65, 0.7];
+  }else if ($(".input1").val() == "1110,1080") {
+    var arr = [0.33, 0.4, 0.45, 0.5, 0.65, 0.7, 0.8];
+  }else if ($(".input1").val() == "1090,1030") {
+    var arr = [0.4, 0.45, 0.5, 0.65, 0.7, 0.8];
+  }else if ($(".input1").val() == "1060,1026") {
+    var arr = [0.45, 0.5, 0.65, 0.7, 0.8, 1];
+  }else if ($(".input1").val() == "800,750") {
+    var arr = [0.45, 0.5, 0.65, 0.7, 0.8, 1];
+  }
+  $(".input4 option").remove();
+  for (var i = 0; i < arr.length; i++) {
+    $(".input4").append("<option value="+arr[i]+">"+arr[i]+"</option>");
+  }
+}
+
+$(".input1").on("click", function(){
+  syncThickness();
+});

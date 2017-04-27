@@ -28,7 +28,7 @@
       <div class="phone">(056) 732-48-43</div>
       <div class="email">email: <a href="mailto:office@potoki.ua">office@potoki.ua</a></div>
       <div class="ru-en">
-        <span>Eng</span><span class="active">Рус</span>
+        <a href="#">Eng</a><a href="#" class="active">Рус</a>
       </div>
       <a href="https://www.facebook.com/potokigroup/" target="_blank"><img src="../src/fb.png" alt="facebook"></a>
       <a href="https://www.youtube.com/channel/UC2u_ToExyrmBD2CuPUedvyw"  target="_blank"><img src="../src/ytb.png" alt="youtube"></a>
@@ -103,11 +103,19 @@
     </div>
   </div>
 
+  <script type="text/javascript">
+  function isNumber(event){
+    var charCode = (event.which) ? event.which : event.keyCode;
+     return false;
+   return true;
+  }
+  </script>
+
   <div class="fourth-block">
     <p>Форма для получения остатков</p>
     <form>
       <input type="text" name="" value="">
-      <input id="phone-input" type="text" name="" value="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+      <input id="phone-input" type="text" name="" value="" onkeypress='return isNumber(event)'>
       <input id="email-input" type="text" name="" value="" placeholder="example@gmail.com">
       <button type='button' disabled class="btn btn-primary">Отправить</button>
     </form>
