@@ -358,6 +358,7 @@
   border: 0;
   line-height: 1;
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .arrow-kill2{
@@ -384,6 +385,7 @@
   border: 0;
   line-height: 1;
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 
