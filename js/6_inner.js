@@ -19,12 +19,35 @@ $(".next-button").on("click", function () {
 
 
 /*POPUP FOR SENDING*/
+
+var data = {};
+var url = "";
+
 $(".fourth-block form button").on("click", function(){
-  $(".fourth-block form").fadeOut( function(){$(".form-feedback").fadeIn()} );
+  data.name =  $("#name-input").val();
+  data.phone = $("#phone-input").val();
+  data.email = $('#email-input').val();
+
+  $.getJSON( url, data )
+    .done(function() {
+      $(".fourth-block form").fadeOut( function(){$(".form-feedback").fadeIn()} );
+    })
+    .fail(function() {
+      $(".form-feedback").html("Ошибка отправки запроса, попробуйте позже.");
+      $(".form-feedback").css("color", "red");
+      $(".fourth-block form").fadeOut( function(){$(".form-feedback").fadeIn()} );
+  });
+
+
+
+
 });
+
+
+
 /*POPUP FOR SENDING*/
 
-
+/* disable email validation
 $('#email-input').keyup(function(event) {
   if( validateEmail( $('#email-input').val() )){
     $('#email-input').css("color", "black");
@@ -32,7 +55,7 @@ $('#email-input').keyup(function(event) {
     $('#email-input').css("color", "red");
   }
 });
-
+*/
 $('#phone-input').keyup(function(event) {
   if( $("#phone-input").val().length > 5 ){
     $('#phone-input').css("color", "black");
@@ -42,7 +65,7 @@ $('#phone-input').keyup(function(event) {
 });
 
 $('.fourth-block form input').keyup(function(event) {
-  if( validateEmail( $('#email-input').val() ) && $("#phone-input").val().length > 5 ){
+  if( /*validateEmail( $('#email-input').val() ) &&*/ $("#phone-input").val().length > 5 ){   //disable email validation
     $(".fourth-block form button").prop("disabled", false);
     console.log($("#phone-input").val().length);
   }else{

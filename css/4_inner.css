@@ -287,9 +287,10 @@
 }
 .eight-block .calc-field-name p:nth-child(2){
   position: relative;
-  top: -1vw;
+  top: -.5vw;
   font-size: .7vw;
   font-family: MuseoSansCyrl_300, sans-serif;
+
 }
 .field1{top: 10vh;  right: 72vw;}
 .field2{top: 10vh;  right: 55vw;}
