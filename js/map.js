@@ -186,21 +186,26 @@ function initMap() {
 
 
   /*ROUTE*/
-  /*
+
   var userLat = 0;
   var userLng = 0;
+  var link = ""
+  var destination = {
+    lat: 48.407569, lng: 35.001023
+  };
   if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       userLat = position.coords.latitude;
       userLng = position.coords.longitude;
-      console.log((userLat+' '+userLng));
-      $(".route-link").removeClass("route-link");
+      link = "https://maps.google.com/maps/dir/" + userLat+","+userLng+"/"+destination.lat+","+destination.lng+"/"
+      $(".route").fadeIn();
+      $(".route a").prop("href", link)
     });
   } else {
     console.log("Geolocation API не поддерживается в вашем браузере");
   }
-  // https://www.google.com.ua/maps/dir/48.4653329,35.0287355/48.4782785,34.686319
-  */
+  // https://maps.google.com/maps/dir/48.4599116,35.050522199999996/48.407569,35.001023/
+
   /*ROUTE*/
 }
 
