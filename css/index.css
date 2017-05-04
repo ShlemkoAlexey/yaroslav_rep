@@ -1,3 +1,7 @@
+body{
+  position: relative;
+}
+
 .first-block{
   position: relative;
 }
@@ -192,29 +196,63 @@
   z-index: 10000;
   text-align: center;
   width: 100%;
-  display: none;
+
 }
-.route a{
-  color: #0598ff;
-  display: inline-block;
-  border: 2px solid #0598ff;
-  border-top: none;
-  border-radius: .5vw;
-  font-size: 1vw;
-  padding: .5vw 1vw ;
-  cursor: pointer;
-  transition: .3s;
+.route ul{
+  position: absolute;
+  text-align: center;
+  list-style: none;
+  margin-left: 40%;
+  border-bottom: 1px solid #0598ff;
+  padding: 0;
+}
+.route ul li{
+  position: relative;
   background: white;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  text-decoration: none;
+  margin: 0;
 }
-.route a:hover{
+.route ul li:nth-child(n+2){
+    display: none;
+  /*border-bottom: 1px solid #0598ff;*/
+  border-left: 2px solid #0598ff;
+  border-right: 2px solid #0598ff;
+}
+.route ul li a{
+  display: block;
+  color: #0598ff;
+  border-bottom: 1px solid #0598ff;
+}
+
+.route ul li a:hover{
   color: white;
   background: #0598ff;
   transition: .3s;
   text-decoration: none;
 }
+.route ul li p{
+  color: #0598ff;
+  display: inline-block;
+  border: 2px solid #0598ff;
+  border-top: none;
+  font-size: 1vw;
+  padding: .5vw 1vw ;
+  cursor: pointer;
+  transition: .3s;
+  background: white;
+  text-decoration: none;
+  margin: 0;
+}
+.route p:hover{
+  color: white;
+  background: #0598ff;
+  transition: .3s;
+  text-decoration: none;
+}
+
+
+
+
+
 
 .sixth-block{
   width: 100%;

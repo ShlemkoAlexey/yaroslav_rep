@@ -186,7 +186,13 @@ function initMap() {
 
 
   /*ROUTE*/
+  $("#show-route-button").on("click", function(){
+    $(".route ul li:nth-child(n+2)").fadeIn();
+  });
 
+  $(".route ul").on("mouseleave", function(){
+    $(".route ul li:nth-child(n+2)").fadeOut();
+  });
   var userLat = 0;
   var userLng = 0;
   var link = ""
@@ -197,9 +203,7 @@ function initMap() {
     navigator.geolocation.getCurrentPosition(function(position) {
       userLat = position.coords.latitude;
       userLng = position.coords.longitude;
-      link = "https://maps.google.com/maps/dir/" + userLat+","+userLng+"/"+destination.lat+","+destination.lng+"/"
-      $(".route").fadeIn();
-      $(".route a").prop("href", link)
+      link = "https://maps.google.com/maps/dir/" + userLat+","+userLng+"/"+destination.lat+","+destination.lng+"/";
     });
   } else {
     console.log("Geolocation API не поддерживается в вашем браузере");
@@ -208,6 +212,7 @@ function initMap() {
 
   /*ROUTE*/
 }
+
 
 
 /*MAP*/
