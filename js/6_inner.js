@@ -33,9 +33,7 @@ $(".fourth-block form button").on("click", function(){
       $(".fourth-block form").fadeOut( function(){$(".form-feedback").fadeIn()} );
     })
     .fail(function() {
-      $(".form-feedback").html("Ошибка отправки запроса, попробуйте позже.");
-      $(".form-feedback").css("color", "red");
-      $(".fourth-block form").fadeOut( function(){$(".form-feedback").fadeIn()} );
+      $(".fourth-block form").fadeOut( function(){$(".form-feedback-false").fadeIn()} );
   });
 
 

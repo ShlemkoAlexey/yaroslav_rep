@@ -18,9 +18,7 @@ $(".sixth-block form button").on("click", function(){
       $(".sixth-block form").fadeOut( function(){$(".form-feedback").fadeIn()} );
     })
     .fail(function() {
-      $(".form-feedback").html("Ошибка отправки запроса, попробуйте позже.");
-      $(".form-feedback").css("color", "red");
-      $(".sixth-block form").fadeOut( function(){$(".form-feedback").fadeIn()} );
+      $(".sixth-block form").fadeOut( function(){$(".form-feedback-false").fadeIn()} );
   });
 
 

@@ -20,8 +20,8 @@
 
 
 .second-block{
-  margin-left: 25%;
-  width: 50%;
+  margin-left: 15%;
+  width: 70%;
   text-align: center;
 }
 
@@ -30,7 +30,7 @@
   font-family: MuseoSansCyrl_100, sans-serif;
   font-size: 1.1vw;
   font-weight: 100;
-  text-align: center;
+  text-align: justify;
   color: rgb(75, 75, 75);
   line-height: 1.5;
 }
@@ -145,6 +145,15 @@
 
 .sixth-block .form-feedback{
   color: green;
+  display: none;
+  font-weight: normal;
+  padding-top: 16.25vw;
+  padding-bottom: 22vw;
+  margin-bottom: 0;
+}
+
+.sixth-block .form-feedback-false{
+  color: red;
   display: none;
   font-weight: normal;
   padding-top: 16.25vw;

@@ -44,7 +44,7 @@ function initMap() {
   });
 
   var contentString2 = '<div>'+
-  '<p>г. Запорожье</p> <p>ПОТОКИ-ЮГ</p> <p>(067) 950-33-14</p>' +
+  '<p>г. Запорожье</p> <p>ПОТОКИ-ЮГ</p> <p>ул. Димитрова, 54</p> <p>(067) 950-33-14</p>' +
   '</div>';
 
   var infowindow2 = new google.maps.InfoWindow({
@@ -66,7 +66,7 @@ function initMap() {
   });
 
   var contentString3 = '<div>'+
-  '<p>г. Киев</p> <p>ПОТОКИ-СЕВЕР</p> <p>(067) 544-38-36</p>'+
+  '<p>г. Киев</p> <p>ПОТОКИ-СЕВЕР</p> <p>ул. Бориспольская, 7а</p><p>(067) 544-38-36</p>'+
   '</div>';
 
   var infowindow3 = new google.maps.InfoWindow({
@@ -112,7 +112,7 @@ function initMap() {
 
 
   var contentString5 = '<div>'+
-  '<p>г. Винница</p> <p>ПОТОКИ-ЗАПАД</p> <p>(096) 552-21-50</p>'+
+  '<p>г. Винница</p> <p>ПОТОКИ-ЗАПАД</p> <p>ул. Энергетическая, 7</p> <p>(096) 552-21-50</p>'+
   '</div>';
 
   var infowindow5 = new google.maps.InfoWindow({
@@ -136,7 +136,7 @@ function initMap() {
 
 
   var contentString6 = '<div>'+
-  '<p>г. Тернополь</p> <p>ПОТОКИ-ЗАПАД</p> <p>(097) 868-18-85</p>'+
+  '<p>г. Тернополь</p> <p>ПОТОКИ-ЗАПАД</p> <p>ул. Промислова, 28</p>  <p>(097) 868-18-85</p>'+
   '</div>';
 
   var infowindow6 = new google.maps.InfoWindow({
@@ -186,13 +186,18 @@ function initMap() {
 
 
   /*ROUTE*/
-  $("#show-route-button").on("click", function(){
-    $(".route ul li:nth-child(n+2)").fadeIn();
-  });
 
-  $(".route ul").on("mouseleave", function(){
-    $(".route ul li:nth-child(n+2)").fadeOut();
-  });
+
+  // $("#show-route-button").on("click", function(){
+  //   $(".route ul li:nth-child(n+3)").fadeIn();
+  // });
+  //
+  // $(".route ul").on("mouseleave", function(){
+  //   $(".route ul li:nth-child(n+2)").fadeOut();
+  // });
+
+
+
   var userLat = 0;
   var userLng = 0;
   var link = ""
@@ -204,15 +209,41 @@ function initMap() {
       userLat = position.coords.latitude;
       userLng = position.coords.longitude;
       link = "https://maps.google.com/maps/dir/" + userLat+","+userLng+"/"+destination.lat+","+destination.lng+"/";
+      $(".route ul li:nth-child(2)").fadeOut();
+
+      $("#show-route-button").on("click", function(){
+        $(".route ul li:nth-child(n+3)").fadeIn();
+      });
+
+      $(".route ul").on("mouseleave", function(){
+        $(".route ul li:nth-child(n+3)").fadeOut();
+      });
+
+
+      $("#route1link").prop("href", createMapLink(userLat, userLng, marker));
+      $("#route2link").prop("href", createMapLink(userLat, userLng, marker2));
+      $("#route3link").prop("href", createMapLink(userLat, userLng, marker3));
+      $("#route4link").prop("href", createMapLink(userLat, userLng, marker4));
+      $("#route5link").prop("href", createMapLink(userLat, userLng, marker5));
+      $("#route6link").prop("href", createMapLink(userLat, userLng, marker6));
+      $("#route7link").prop("href", createMapLink(userLat, userLng, marker7));
+
     });
+
+
+
+
   } else {
     console.log("Geolocation API не поддерживается в вашем браузере");
   }
   // https://maps.google.com/maps/dir/48.4599116,35.050522199999996/48.407569,35.001023/
-
+  // console.log("marker1 = " + marker.getPosition().lat());
+  // console.log("marker2 = " + marker2.getPosition().lng());
   /*ROUTE*/
 }
 
-
+function createMapLink(userLat, userLng, marker){
+  return link = "https://maps.google.com/maps/dir/" + userLat+","+userLng+"/"+marker.getPosition().lat()+","+marker.getPosition().lng()+"/";
+}
 
 /*MAP*/
