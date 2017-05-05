@@ -1,5 +1,5 @@
 var data = {};
-var url = "";
+var url = "";       //ADD URL HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 /*POPUP FOR SENDING*/

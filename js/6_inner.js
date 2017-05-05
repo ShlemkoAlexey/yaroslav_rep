@@ -21,7 +21,7 @@ $(".next-button").on("click", function () {
 /*POPUP FOR SENDING*/
 
 var data = {};
-var url = "";
+var url = "";             //ADD URL HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 $(".fourth-block form button").on("click", function(){
   data.name =  $("#name-input").val();
