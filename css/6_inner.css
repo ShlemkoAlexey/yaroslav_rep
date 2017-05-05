@@ -189,6 +189,7 @@
   font-weight: normal;
   padding-top: 12.5vw;
   padding-bottom: 19.75vw;
+  font-size: 4vw;
 }
 .fourth-block .form-feedback-false{
   color: red;
@@ -196,4 +197,5 @@
   font-weight: normal;
   padding-top: 12.5vw;
   padding-bottom: 19.75vw;
+  font-size: 4vw;
 }
