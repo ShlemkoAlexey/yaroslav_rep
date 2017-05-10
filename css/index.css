@@ -221,7 +221,7 @@ body{
   width: 20vw;
 }
 .route ul li:nth-child(2){
-  display: block;
+  display: none;
   color: red;
   font-size: .9vw;
   border-left: 2px solid #0598ff;

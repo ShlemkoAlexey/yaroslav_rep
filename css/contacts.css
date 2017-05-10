@@ -148,8 +148,9 @@
   display: none;
   font-weight: normal;
   padding-top: 16.25vw;
-  padding-bottom: 22vw;
+  padding-bottom: 20.35vw;
   margin-bottom: 0;
+  font-size: 2vw;
 }
 
 .sixth-block .form-feedback-false{
@@ -157,6 +158,9 @@
   display: none;
   font-weight: normal;
   padding-top: 16.25vw;
-  padding-bottom: 22vw;
+  padding-bottom: 20.35vw;
   margin-bottom: 0;
+  font-size: 2vw;
+  width: 60%;
+  margin-left: 20%;
 }

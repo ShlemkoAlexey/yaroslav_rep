@@ -1,3 +1,13 @@
+$(document).ready(function(){
+  $("#show-route-button").on("click", function(){
+    $(".route ul li:nth-child(2)").fadeIn();
+  });
+
+  $(".route ul").on("mouseleave", function(){
+    $(".route ul li:nth-child(2)").fadeOut();
+  });
+});
+
 /*MAP*/
 var markerPath = "src/marker1.png";
 var map;
@@ -209,8 +219,8 @@ function initMap() {
       userLat = position.coords.latitude;
       userLng = position.coords.longitude;
       link = "https://maps.google.com/maps/dir/" + userLat+","+userLng+"/"+destination.lat+","+destination.lng+"/";
-      $(".route ul li:nth-child(2)").fadeOut();
-
+      $("#show-route-button").unbind();
+      $(".route ul").unbind();
       $("#show-route-button").on("click", function(){
         $(".route ul li:nth-child(n+3)").fadeIn();
       });

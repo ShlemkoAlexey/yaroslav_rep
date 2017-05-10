@@ -118,19 +118,22 @@ function getValsForCalc(){
   mainObject.listThickness = +$(".input4").val();
 };
 function calculate(){
-  mainObject.listsNumber = Math.ceil(mainObject.totalWidth*1000 / mainObject.montWidth);
-  mainObject.listsArea = mainObject.listsNumber*mainObject.maxWidth/1000 ;
-  mainObject.effectiveArea = mainObject.listsNumber*mainObject.montWidth/1000 ;
   if (mainObject.listLength >= 0.5 && mainObject.listLength <=12 ) {
+    mainObject.listsNumber = Math.ceil(mainObject.totalWidth*1000 / mainObject.montWidth);
+    mainObject.listsArea = mainObject.listsNumber*mainObject.maxWidth/1000*mainObject.listLength ;
+    mainObject.effectiveArea = mainObject.listsNumber*mainObject.montWidth/1000*mainObject.listLength ;
     mainObject.totalWeight = mainObject.width * mainObject.listThickness * mainObject.listLength * mainObject.density * mainObject.listsNumber/1000
   }else(
-    mainObject.totalWeight = 0
+    mainObject.totalWeight = 0,
+    mainObject.effectiveArea = 0,
+    mainObject.listsArea = 0,
+    mainObject.listsNumber = 0
   )
 };
 function synchronize(){
   $(".result2 p").html(mainObject.listsNumber);
-  $(".result3 p").html(mainObject.listsArea);
-  $(".result4 p").html(mainObject.effectiveArea);
+  $(".result3 p").html(mainObject.listsArea.toFixed(2));
+  $(".result4 p").html(mainObject.effectiveArea.toFixed(2));
   $(".result5 p").html(mainObject.totalWeight.toFixed(2));
 }
 
