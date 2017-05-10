@@ -6,6 +6,10 @@ $(document).ready(function(){
   $(".route ul").on("mouseleave", function(){
     $(".route ul li:nth-child(2)").fadeOut();
   });
+
+  $(document).on("scroll", function(){
+    $(".route ul li:nth-child(2)").fadeOut();
+  });
 });
 
 /*MAP*/
@@ -195,19 +199,6 @@ function initMap() {
   }
 
 
-  /*ROUTE*/
-
-
-  // $("#show-route-button").on("click", function(){
-  //   $(".route ul li:nth-child(n+3)").fadeIn();
-  // });
-  //
-  // $(".route ul").on("mouseleave", function(){
-  //   $(".route ul li:nth-child(n+2)").fadeOut();
-  // });
-
-
-
   var userLat = 0;
   var userLng = 0;
   var link = ""
@@ -228,6 +219,9 @@ function initMap() {
       $(".route ul").on("mouseleave", function(){
         $(".route ul li:nth-child(n+3)").fadeOut();
       });
+      $(document).on("scroll", function(){
+        $(".route ul li:nth-child(n+3)").fadeOut();
+      });
 
 
       $("#route1link").prop("href", createMapLink(userLat, userLng, marker));
@@ -246,10 +240,6 @@ function initMap() {
   } else {
     console.log("Geolocation API не поддерживается в вашем браузере");
   }
-  // https://maps.google.com/maps/dir/48.4599116,35.050522199999996/48.407569,35.001023/
-  // console.log("marker1 = " + marker.getPosition().lat());
-  // console.log("marker2 = " + marker2.getPosition().lng());
-  /*ROUTE*/
 }
 
 function createMapLink(userLat, userLng, marker){

@@ -392,8 +392,8 @@
 
 
 .scrollToCalc{
-  width:40px;
-  height:40px;
+  width:100px;
+  height:100px;
   opacity:0.6;
   position:fixed;
   top:50px;

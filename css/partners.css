@@ -3,13 +3,14 @@
   height: 40vw;
   background-image: url(../src/partners.png);
   background-size: cover;
-  text-align: center;
-  padding-top: 16.5vw;
+  text-align: left;
+  padding-top: 28vw;
 }
 
 .first-block h1{
   color: white;
   font-size: 4vw;
+  margin-left: 4vw;
 }
 
 

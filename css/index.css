@@ -209,7 +209,7 @@ body{
   position: absolute;
   text-align: center;
   list-style: none;
-  margin-left: 40%;
+  margin-left: 30%;
   /*border-bottom: 1px solid #0598ff;*/
   padding: 0;
   width: 20vw;
@@ -218,7 +218,7 @@ body{
   position: relative;
   background: white;
   margin: 0;
-  width: 20vw;
+  width: 40vw;
 }
 .route ul li:nth-child(2){
   display: none;
@@ -238,6 +238,7 @@ body{
   display: block;
   color: #0598ff;
   border-bottom: 1px solid #0598ff;
+  font-size: 1.5vw;
 }
 
 .route ul li a:hover{
@@ -251,14 +252,14 @@ body{
   display: inline-block;
   border: 2px solid #0598ff;
   border-top: none;
-  font-size: 1vw;
+  font-size: 2vw;
   padding: .5vw 1vw ;
   cursor: pointer;
   transition: .3s;
   background: white;
   text-decoration: none;
   margin: 0;
-  width: 20vw;
+  width: 40vw;
 }
 .route p:hover{
   color: white;
